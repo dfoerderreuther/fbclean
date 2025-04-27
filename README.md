@@ -13,8 +13,7 @@ This program helps you clean up your Facebook activity history by automatically 
 ## Prerequisites
 
 - Python 3.x
-- Chrome browser installed
-- Facebook account
+- Chromedriver installed
 
 ## Installation
 
@@ -42,7 +41,7 @@ To find your user ID:
 
 ## Usage
 
-1. Open `main.py`
+1. Open `automation.py`
 2. Choose which mode you want to run by uncommenting the desired function call:
 
 ```python
@@ -55,7 +54,7 @@ if __name__ == "__main__":
 
 3. Run the program:
 ```bash
-python main.py
+python automation.py
 ```
 
 ## Features
@@ -68,7 +67,6 @@ Each mode will:
 - Automatically log in to Facebook
 - Navigate to your activity page
 - Select and remove items
-- Refresh the page every 5 iterations to prevent stale content
 - Continue until manually stopped (Ctrl+C)
 
 ## Notes
@@ -83,6 +81,4 @@ Each mode will:
 
 If you encounter any issues:
 1. Make sure you're logged into Facebook in Chrome
-2. Verify your user ID is correct in the TARGET_URL
-3. Check that all dependencies are installed
-4. Ensure you have a stable internet connection 
+2. Observe Selenium activity and adopt code. E.g. comments in some years cause a different confirmation dialog 🤷‍♂️. Just change code to reflect difference and run again.
